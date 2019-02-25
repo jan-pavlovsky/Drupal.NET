@@ -16,6 +16,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Composer\Composer.msbuildproj" />
     <ProjectReference Include="..\..\Doctrine\Doctrine.msbuildproj" />
     <ProjectReference Include="..\..\DrupalCore\DrupalCore.msbuildproj" />
     <ProjectReference Include="..\..\Interop\Interop.msbuildproj" />

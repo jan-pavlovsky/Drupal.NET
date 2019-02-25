@@ -21,6 +21,8 @@ Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Psr", "Psr\Psr.msbuildproj"
 EndProject
 Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Interop", "Interop\Interop.msbuildproj", "{14135D05-5279-4CF9-9A24-9E859FCAEF6D}"
 EndProject
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Composer", "Composer\Composer.msbuildproj", "{1A8F5308-ED03-4DB7-AA9E-2FE409240B8D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{14135D05-5279-4CF9-9A24-9E859FCAEF6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14135D05-5279-4CF9-9A24-9E859FCAEF6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14135D05-5279-4CF9-9A24-9E859FCAEF6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A8F5308-ED03-4DB7-AA9E-2FE409240B8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A8F5308-ED03-4DB7-AA9E-2FE409240B8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A8F5308-ED03-4DB7-AA9E-2FE409240B8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A8F5308-ED03-4DB7-AA9E-2FE409240B8D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

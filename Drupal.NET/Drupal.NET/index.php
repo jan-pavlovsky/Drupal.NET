@@ -13,7 +13,10 @@ use Symfony\Component\HttpFoundation\Request;
 
 echo "Drupal.NET index start\n";
 
-$autoloader = require_once 'autoload.php';
+//$autoloader = require_once 'autoload.php';
+//Replaced:
+
+$autoloader = ComposerAutoloaderInitDrupal8::getLoader();
 
 echo "1\n";
 
