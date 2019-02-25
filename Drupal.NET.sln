@@ -3,11 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Drupal.NET\Server\Server.csproj", "{3A38A1D3-B35F-4A2D-90AE-872ACBB38E46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server", "Drupal.NET\Server\Server.csproj", "{3A38A1D3-B35F-4A2D-90AE-872ACBB38E46}"
 EndProject
 Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Drupal.NET", "Drupal.NET\Drupal.NET\Drupal.NET.msbuildproj", "{6A428427-D5FF-40C9-8902-47E61AEAF7B3}"
 EndProject
 Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "DrupalCore", "DrupalCore\DrupalCore.msbuildproj", "{7A6607AC-FF4D-47E2-B7CE-D1188547B8BE}"
+EndProject
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Symfony", "Symfony\Symfony.msbuildproj", "{40690030-7B8B-4EA5-BBAF-A2EAEA32A7F4}"
+EndProject
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Doctrine", "Doctrine\Doctrine.msbuildproj", "{31A7B6D6-5DCA-4CFB-B57B-18D990D9BF0B}"
+EndProject
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Zend", "Zend\Zend.msbuildproj", "{EE845ED9-DE22-4DE5-9D82-A08657D3FDFC}"
+EndProject
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Twig", "Twig\Twig.msbuildproj", "{A717BD67-2B89-431E-AC6B-8309206F812F}"
+EndProject
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Psr", "Psr\Psr.msbuildproj", "{D180193D-F49A-4319-912C-3B6731B2FA9B}"
+EndProject
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Interop", "Interop\Interop.msbuildproj", "{14135D05-5279-4CF9-9A24-9E859FCAEF6D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +39,30 @@ Global
 		{7A6607AC-FF4D-47E2-B7CE-D1188547B8BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A6607AC-FF4D-47E2-B7CE-D1188547B8BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A6607AC-FF4D-47E2-B7CE-D1188547B8BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40690030-7B8B-4EA5-BBAF-A2EAEA32A7F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40690030-7B8B-4EA5-BBAF-A2EAEA32A7F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40690030-7B8B-4EA5-BBAF-A2EAEA32A7F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40690030-7B8B-4EA5-BBAF-A2EAEA32A7F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31A7B6D6-5DCA-4CFB-B57B-18D990D9BF0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31A7B6D6-5DCA-4CFB-B57B-18D990D9BF0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31A7B6D6-5DCA-4CFB-B57B-18D990D9BF0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31A7B6D6-5DCA-4CFB-B57B-18D990D9BF0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE845ED9-DE22-4DE5-9D82-A08657D3FDFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE845ED9-DE22-4DE5-9D82-A08657D3FDFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE845ED9-DE22-4DE5-9D82-A08657D3FDFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE845ED9-DE22-4DE5-9D82-A08657D3FDFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A717BD67-2B89-431E-AC6B-8309206F812F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A717BD67-2B89-431E-AC6B-8309206F812F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A717BD67-2B89-431E-AC6B-8309206F812F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A717BD67-2B89-431E-AC6B-8309206F812F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D180193D-F49A-4319-912C-3B6731B2FA9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D180193D-F49A-4319-912C-3B6731B2FA9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D180193D-F49A-4319-912C-3B6731B2FA9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D180193D-F49A-4319-912C-3B6731B2FA9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14135D05-5279-4CF9-9A24-9E859FCAEF6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14135D05-5279-4CF9-9A24-9E859FCAEF6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14135D05-5279-4CF9-9A24-9E859FCAEF6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14135D05-5279-4CF9-9A24-9E859FCAEF6D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

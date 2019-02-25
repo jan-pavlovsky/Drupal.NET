@@ -1,15 +1,12 @@
 <Project Sdk="Peachpie.NET.Sdk/0.9.35">
-
   <PropertyGroup>
     <OutputType>Library</OutputType>
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>Drupal.NET</AssemblyName>
   </PropertyGroup>
-
   <ItemGroup>
     <Compile Include="**/*.php" />
   </ItemGroup>
-
   <ItemGroup>
     <Content Include="**" Exclude="obj/**;bin/**;PublishProfiles/**;@(Compile);$(MsBuildThisFile)">
       <PackagePath>contentFiles/any/netcoreapp2.0/wwwroot/</PackagePath>
@@ -18,5 +15,13 @@
       <CopyToPublishDirectory>true</CopyToPublishDirectory>
     </Content>
   </ItemGroup>
-
+  <ItemGroup>
+    <ProjectReference Include="..\..\Doctrine\Doctrine.msbuildproj" />
+    <ProjectReference Include="..\..\DrupalCore\DrupalCore.msbuildproj" />
+    <ProjectReference Include="..\..\Interop\Interop.msbuildproj" />
+    <ProjectReference Include="..\..\Psr\Psr.msbuildproj" />
+    <ProjectReference Include="..\..\Symfony\Symfony.msbuildproj" />
+    <ProjectReference Include="..\..\Twig\Twig.msbuildproj" />
+    <ProjectReference Include="..\..\Zend\Zend.msbuildproj" />
+  </ItemGroup>
 </Project>

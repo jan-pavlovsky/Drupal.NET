@@ -1,12 +1,16 @@
-<Project Sdk="Peachpie.NET.Sdk/0.9.35">
-  
+﻿<Project Sdk="Peachpie.NET.Sdk/0.9.35">
   <PropertyGroup>
     <OutputType>library</OutputType>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
-
   <ItemGroup>
-    <Compile Include="**/*.php" />
+    <Compile Include="**/*.php" Exclude="**/Test/**/*.php;**/simpletest/**/*.php;**/tests/**/*.php;**/testing/**/*.php;**/benchmark/**/*.php;**/composer-merge-plugin/**" />
+    <Compile Include="**/*.inc" />
+    <Compile Include="**/*.module" />
   </ItemGroup>
-
+  <ItemGroup>
+    <ProjectReference Include="..\Symfony\Symfony.msbuildproj" />
+    <ProjectReference Include="..\Twig\Twig.msbuildproj" />
+    <ProjectReference Include="..\Zend\Zend.msbuildproj" />
+  </ItemGroup>
 </Project>

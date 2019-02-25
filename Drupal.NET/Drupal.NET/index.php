@@ -11,11 +11,15 @@
 use Drupal\Core\DrupalKernel;
 use Symfony\Component\HttpFoundation\Request;
 
-echo "Drupal.NET index start";
+echo "Drupal.NET index start\n";
 
 $autoloader = require_once 'autoload.php';
 
-$kernel = new DrupalKernel('prod', $autoload5er);
+echo "1\n";
+
+$kernel = new DrupalKernel('prod', $autoloader);
+
+echo "2\n";
 
 $request = Request::createFromGlobals();
 $response = $kernel->handle($request);
