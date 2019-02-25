@@ -1,0 +1,15 @@
+﻿<Project Sdk="Peachpie.NET.Sdk/0.9.9-dev">
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>vendor</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="**/*.php" Exclude="**/Tests/**/*.php;**/Test/**/*.php;**/phpunit*/**/*.php;vendor/symfony/cache/**;vendor\symfony\polyfill-apcu\**" />
+    <Compile Include="../symfony-cmf/**/*.php" Exclude="**/Tests/**/*.php;**/Test/**/*.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Doctrine\Doctrine.msbuildproj" />
+    <ProjectReference Include="..\Psr\Psr.msbuildproj" />
+  </ItemGroup>
+</Project>

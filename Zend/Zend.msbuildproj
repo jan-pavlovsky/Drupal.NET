@@ -1,0 +1,13 @@
+<Project Sdk="Peachpie.NET.Sdk/0.9.35">
+  <PropertyGroup>
+    <OutputType>library</OutputType>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="**/*.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Interop\Interop.msbuildproj" />
+    <ProjectReference Include="..\Psr\Psr.msbuildproj" />
+  </ItemGroup>
+</Project>
