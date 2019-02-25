@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Drupal.NET\Server
 EndProject
 Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "Drupal.NET", "Drupal.NET\Drupal.NET\Drupal.NET.msbuildproj", "{6A428427-D5FF-40C9-8902-47E61AEAF7B3}"
 EndProject
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "DrupalCore", "DrupalCore\DrupalCore.msbuildproj", "{7A6607AC-FF4D-47E2-B7CE-D1188547B8BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{6A428427-D5FF-40C9-8902-47E61AEAF7B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A428427-D5FF-40C9-8902-47E61AEAF7B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A428427-D5FF-40C9-8902-47E61AEAF7B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A6607AC-FF4D-47E2-B7CE-D1188547B8BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A6607AC-FF4D-47E2-B7CE-D1188547B8BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A6607AC-FF4D-47E2-B7CE-D1188547B8BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A6607AC-FF4D-47E2-B7CE-D1188547B8BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
