@@ -35,7 +35,6 @@ use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
 use Symfony\Component\HttpKernel\Exception\HttpExceptionInterface;
 use Symfony\Component\HttpKernel\TerminableInterface;
 use Symfony\Component\Routing\Route;
-
 /**
  * The DrupalKernel class is the core of Drupal itself.
  *

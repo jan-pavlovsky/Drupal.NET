@@ -22,7 +22,10 @@
     <ProjectReference Include="..\..\Composer\Composer.msbuildproj" />
     <ProjectReference Include="..\..\Doctrine\Doctrine.msbuildproj" />
     <ProjectReference Include="..\..\DrupalCore\DrupalCore.msbuildproj" />
+    <ProjectReference Include="..\..\GuzzleHttp\GuzzleHttp.msbuildproj" />
     <ProjectReference Include="..\..\Interop\Interop.msbuildproj" />
+    <ProjectReference Include="..\..\Myclabs\Myclabs.msbuildproj" />
+    <ProjectReference Include="..\..\Paragonie\Paragonie.msbuildproj" />
     <ProjectReference Include="..\..\Psr\Psr.msbuildproj" />
     <ProjectReference Include="..\..\Symfony\Symfony.msbuildproj" />
     <ProjectReference Include="..\..\Twig\Twig.msbuildproj" />

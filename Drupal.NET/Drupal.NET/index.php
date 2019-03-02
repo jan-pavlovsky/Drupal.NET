@@ -11,24 +11,16 @@
 use Drupal\Core\DrupalKernel;
 use Symfony\Component\HttpFoundation\Request;
 
-include 'test.php';
-echo "Drupal.NET index start\n";
-
 require_once 'autoload.php';
-//Replaced:
+//Replaced in PeachPie version of Autoloader
 
-print(class_exists('ComposerAutoloaderInitDrupal8'));
-
-$autoloader = ComposerAutoloaderInitDrupal8::getLoader();
+if(class_exists('ComposerAutoloaderInitDrupal8')) {
+    $autoloader = ComposerAutoloaderInitDrupal8::getLoader();
+} else {
+    echo "Composer Autoloader for Drupal not included";
+} 
 
 //print_r($autoloader);
-$kernel = new DrupalKernel('prod', $autoloader);
-
-require __DIR__ . '/core/lib/Drupal/Core/DrupalKernel.php';
-
-print(class_exists('Drupal\Core\DrupalKernel'));
-print(class_exists('core\Drupal\Core\DrupalKernel'));
-
 $kernel = new DrupalKernel('prod', $autoloader);
 
 $request = Request::createFromGlobals();

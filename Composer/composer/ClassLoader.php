@@ -322,11 +322,9 @@ class ClassLoader
      */
     public function loadClass($class)
     {
-    print('loadClass: ' . $class . '<br/>');
+        print('loadClass: ' . $class . '<br/>');
         if ($file = $this->findFile($class)) {
-        print($file . ' ' . file_exists($file) . 'FILE <br/>');
             $this->includeFileInScope($file);
-            print(class_exists('composer\\' . $class) . '<br/>');
 
             return true;
         }
@@ -440,19 +438,15 @@ class ClassLoader
         return false;
     }
 
-    //PeacPie
+    //PeachPie
     function includeFileInScope($file)
     {
-        print('inc: ' . $file . "-- " . file_exists($file) . "<br/>");
         try {
-        echo 'AAAAA';
             require $file;
-            echo "BBBBB";
         } catch (Exception $e) {
-        echo "CCCCC";
+            //TODO remove
             echo 'Caught exception: ',  $e->getMessage(), "\n";
         }   
-        print('$$$<br/>');  
     }
 }
 
