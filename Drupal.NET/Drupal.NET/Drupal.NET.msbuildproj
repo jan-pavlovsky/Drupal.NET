@@ -1,4 +1,4 @@
-<Project Sdk="Peachpie.NET.Sdk/0.9.35">
+﻿<Project Sdk="Peachpie.NET.Sdk/0.9.35">
   <PropertyGroup>
     <OutputType>Library</OutputType>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -16,6 +16,9 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Content Remove="test.php" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\..\Composer\Composer.msbuildproj" />
     <ProjectReference Include="..\..\Doctrine\Doctrine.msbuildproj" />
     <ProjectReference Include="..\..\DrupalCore\DrupalCore.msbuildproj" />
@@ -24,5 +27,17 @@
     <ProjectReference Include="..\..\Symfony\Symfony.msbuildproj" />
     <ProjectReference Include="..\..\Twig\Twig.msbuildproj" />
     <ProjectReference Include="..\..\Zend\Zend.msbuildproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="test.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Peachpie.Runtime" Version="0.9.9-dev" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Update="Peachpie.App" Version="0.9.9-dev" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Update="Peachpie.Compiler.Tools" Version="0.9.9-dev" />
   </ItemGroup>
 </Project>

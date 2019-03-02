@@ -7,7 +7,16 @@
     <Compile Include="**/*.php" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Peachpie.Runtime" Version="0.9.9-dev" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Psr\Psr.msbuildproj" />
     <ProjectReference Include="..\Symfony\Symfony.msbuildproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Update="Peachpie.App" Version="0.9.9-dev" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Update="Peachpie.Compiler.Tools" Version="0.9.9-dev" />
   </ItemGroup>
 </Project>
