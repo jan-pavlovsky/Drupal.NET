@@ -1,4 +1,4 @@
-<?php
+ , <?php
 
 /**
  * @file
@@ -11,18 +11,25 @@
 use Drupal\Core\DrupalKernel;
 use Symfony\Component\HttpFoundation\Request;
 
+include 'test.php';
 echo "Drupal.NET index start\n";
 
-//$autoloader = require_once 'autoload.php';
+require_once 'autoload.php';
 //Replaced:
+
+print(class_exists('ComposerAutoloaderInitDrupal8'));
 
 $autoloader = ComposerAutoloaderInitDrupal8::getLoader();
 
-echo "1\n";
-
+//print_r($autoloader);
 $kernel = new DrupalKernel('prod', $autoloader);
 
-echo "2\n";
+require __DIR__ . '/core/lib/Drupal/Core/DrupalKernel.php';
+
+print(class_exists('Drupal\Core\DrupalKernel'));
+print(class_exists('core\Drupal\Core\DrupalKernel'));
+
+$kernel = new DrupalKernel('prod', $autoloader);
 
 $request = Request::createFromGlobals();
 $response = $kernel->handle($request);

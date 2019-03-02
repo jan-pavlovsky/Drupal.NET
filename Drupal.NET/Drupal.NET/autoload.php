@@ -11,4 +11,6 @@
  * @see core/modules/statistics/statistics.php
  */
 
-return require __DIR__ . '/vendor/autoload.php';
+require __DIR__ . '/composer/autoload_real.php';
+
+//require __DIR__ . '/core/autoload.php';

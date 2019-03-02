@@ -218,9 +218,12 @@ class ClassLoader
      */
     public function setPsr4($prefix, $paths)
     {
+    print("PSR4");
         if (!$prefix) {
+        print('fallback');
             $this->fallbackDirsPsr4 = (array) $paths;
         } else {
+        print('primary');
             $length = strlen($prefix);
             if ('\\' !== $prefix[$length - 1]) {
                 throw new \InvalidArgumentException("A non-empty PSR-4 prefix must end with a namespace separator.");
@@ -299,6 +302,7 @@ class ClassLoader
      */
     public function register($prepend = false)
     {
+        print('register');
         spl_autoload_register(array($this, 'loadClass'), true, $prepend);
     }
 
@@ -318,8 +322,11 @@ class ClassLoader
      */
     public function loadClass($class)
     {
+    print('loadClass: ' . $class . '<br/>');
         if ($file = $this->findFile($class)) {
-            includeFile($file);
+        print($file . ' ' . file_exists($file) . 'FILE <br/>');
+            $this->includeFileInScope($file);
+            print(class_exists('composer\\' . $class) . '<br/>');
 
             return true;
         }
@@ -432,6 +439,21 @@ class ClassLoader
 
         return false;
     }
+
+    //PeacPie
+    function includeFileInScope($file)
+    {
+        print('inc: ' . $file . "-- " . file_exists($file) . "<br/>");
+        try {
+        echo 'AAAAA';
+            require $file;
+            echo "BBBBB";
+        } catch (Exception $e) {
+        echo "CCCCC";
+            echo 'Caught exception: ',  $e->getMessage(), "\n";
+        }   
+        print('$$$<br/>');  
+    }
 }
 
 /**
@@ -441,5 +463,7 @@ class ClassLoader
  */
 function includeFile($file)
 {
+    print('out: ' . $file . " ");
     include $file;
+    print('out');
 }
