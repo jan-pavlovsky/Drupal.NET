@@ -11,13 +11,12 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
-    <PackageReference Include="Peachpie.AspNetCore.Web" Version="0.9.35" />
+    <PackageReference Include="Peachpie.AspNetCore.Web" Version="0.9.9-dev" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Drupal.NET\Drupal.NET.msbuildproj">
-      <PrivateAssets>None</PrivateAssets>
-    </ProjectReference>
+    <ProjectReference Include="..\..\Composer\Composer.msbuildproj" />
+    <ProjectReference Include="..\Drupal.NET\Drupal.NET.msbuildproj" />
   </ItemGroup>
 
 </Project>
