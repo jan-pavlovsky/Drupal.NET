@@ -302,7 +302,6 @@ class ClassLoader
      */
     public function register($prepend = false)
     {
-        print('register');
         spl_autoload_register(array($this, 'loadClass'), true, $prepend);
     }
 
@@ -322,7 +321,7 @@ class ClassLoader
      */
     public function loadClass($class)
     {
-        print('loadClass: ' . $class . '<br/>');
+        // print('loadClass: ' . $class . '<br/>');
         if ($file = $this->findFile($class)) {
             $this->includeFileInScope($file);
 

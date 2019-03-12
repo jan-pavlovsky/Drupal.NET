@@ -1081,7 +1081,7 @@ class DrupalKernel implements DrupalKernelInterface, TerminableInterface {
       elseif (extension_loaded('xcache')) {
         $loader = new XcacheClassLoader($prefix, $this->classLoader);
       }
-      if (!empty($loader)) {
+      if (isset($loader)) {
         $this->classLoader->unregister();
         // The optimized classloader might be persistent and store cache misses.
         // For example, once a cache miss is stored in APCu clearing it on a

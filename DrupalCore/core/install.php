@@ -31,7 +31,8 @@ if (version_compare(PHP_VERSION, '5.5.9') < 0) {
 }
 
 // Initialize the autoloader.
-$class_loader = require_once $root_path . '/autoload.php';
+require_once $root_path . '/autoload.php';
+$class_loader = ComposerAutoloaderInitDrupal8::getLoader();
 
 // If OPCache is in use, ensure opcache.save_comments is enabled.
 if (OpCodeCache::isEnabled() && !ini_get('opcache.save_comments')) {
