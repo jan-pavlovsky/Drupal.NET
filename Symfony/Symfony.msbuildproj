@@ -2,7 +2,6 @@
   <PropertyGroup>
     <OutputType>Library</OutputType>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>vendor</AssemblyName>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="**/*.php" Exclude="**/Tests/**/*.php;**/Test/**/*.php;**/phpunit*/**/*.php;vendor/symfony/cache/**;vendor\symfony\polyfill-apcu\**" />
@@ -11,5 +10,8 @@
   <ItemGroup>
     <ProjectReference Include="..\Doctrine\Doctrine.msbuildproj" />
     <ProjectReference Include="..\Psr\Psr.msbuildproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Update="Peachpie.App" Version="1.0.0-appv2394" />
   </ItemGroup>
 </Project>

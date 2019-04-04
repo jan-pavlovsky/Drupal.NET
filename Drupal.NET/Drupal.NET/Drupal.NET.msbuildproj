@@ -1,4 +1,4 @@
-﻿<Project Sdk="Peachpie.NET.Sdk/0.9.9-dev">
+<Project Sdk="Peachpie.NET.Sdk/0.9.9-dev">
   <PropertyGroup>
     <OutputType>Library</OutputType>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -24,7 +24,6 @@
     <ProjectReference Include="..\..\DrupalCore\DrupalCore.msbuildproj" />
     <ProjectReference Include="..\..\GuzzleHttp\GuzzleHttp.msbuildproj" />
     <ProjectReference Include="..\..\Interop\Interop.msbuildproj" />
-    <ProjectReference Include="..\..\Myclabs\Myclabs.msbuildproj" />
     <ProjectReference Include="..\..\Paragonie\Paragonie.msbuildproj" />
     <ProjectReference Include="..\..\Psr\Psr.msbuildproj" />
     <ProjectReference Include="..\..\Symfony\Symfony.msbuildproj" />
@@ -33,14 +32,5 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="test.php" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Peachpie.Runtime" Version="0.9.9-dev" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Update="Peachpie.App" Version="0.9.9-dev" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Update="Peachpie.Compiler.Tools" Version="0.9.9-dev" />
   </ItemGroup>
 </Project>

@@ -9,4 +9,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Psr\Psr.msbuildproj" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Update="Peachpie.App" Version="1.0.0-appv2394" />
+  </ItemGroup>
 </Project>

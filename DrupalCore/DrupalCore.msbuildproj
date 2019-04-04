@@ -13,4 +13,7 @@
     <ProjectReference Include="..\Twig\Twig.msbuildproj" />
     <ProjectReference Include="..\Zend\Zend.msbuildproj" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Update="Peachpie.App" Version="1.0.0-appv2394" />
+  </ItemGroup>
 </Project>

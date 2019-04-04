@@ -321,8 +321,9 @@ class ClassLoader
      */
     public function loadClass($class)
     {
-        // print('loadClass: ' . $class . '<br/>');
+        print('loadClass: ' . $class . '<br/>');
         if ($file = $this->findFile($class)) {
+            print("OK");
             $this->includeFileInScope($file);
 
             return true;
